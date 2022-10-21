@@ -1,0 +1,79 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<!-- Main Page -->
+<section class="hero-banner-ten position-relative zn2">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 m-auto text-center wow fadeInUp" style="visibility: visible; animation-name: fadeInUp">
+        <h1 class="hero-heading fw-500 tx-dark">
+          <span class="ds">“</span>Cyber <span class="red">Security</span> is much <br />
+          more than a matter of <span class="red">IT</span>.<span class="ds">”</span>
+        </h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Events Section -->
+<section class="events" id="events">
+  <div class="container border-b">
+    <div class="m-title text-center">
+      <h2>UPCOMING EVENTS</h2>
+    </div>
+    {% for up_event in upcoming_events %} 
+      {% if up_event.alignment == 'Left' %}
+        <div class="row event">
+          <div class="col-md-6 col-lg-4 fadeInUp">
+            <img src="{{ up_event.image.url }}" class="img-fluid event-img" />
+          </div>
+          <div class="col-md-6 col-lg-8">
+            <h3>{{ up_event.title }}</h3>
+            <p>
+              {{ up_event.description }}
+            </p>
+          </div>
+        </div>
+      {% else %}
+        <!-- 2nd Event -->
+        <div class="row event">
+          <div class="col-md-6 col-lg-8">
+            <h3>{{ up_event.title }}</h3>
+            <p>{{ up_event.description }}</p>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <img src="{{ up_event.image.url }}" class="img-fluid event-img" />
+          </div>
+        </div>
+    {% endif %}
+  {% endfor %}
+  </div>
+</section>
+<section class="events">
+  <div class="container border-b">
+    <div class="m-title text-center">
+      <h2>PAST EVENTS</h2>
+    </div>
+    <div class="row event">
+      {% for past_event in past_events %}
+        <div class="col-md-6">
+          <img src="{{ past_event.image.url }}" class="img-fluid past-event-img" />
+          <h3 class="mt">{{ past_event.title }}</h3>
+          <p>
+            {{ past_event.description }}
+          </p>
+          <p>
+            {% if past_event.link_1_title %}
+            <a href="{{ past_event.link_1_link }}" class="social-link mr-3" target="_blank" rel="noopener noreferrer">{{ past_event.link_1_title }}</a>
+            {% endif %}
+            {% if past_event.link_2_title %}
+            <a href="{{ past_event.link_2_link }}" class="social-link mr-3" target="_blank" rel="noopener noreferrer">{{ past_event.link_2_title }}</a>
+            {% endif %}
+            {% if past_event.link_3_title %}
+            <a href="{{ past_event.link_3_link }}" class="social-link mr-3" target="_blank" rel="noopener noreferrer">{{ past_event.link_3_title }}</a>
+            {% endif %}
+          </p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock content %}

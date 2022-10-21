@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<section class="events">
+  <div class="container border-b">
+    {% if request.user.is_autheticated %}
+    <div class='d-flex justify-content-end'>
+      <button onclick="location.href='{% url 'add_blog' %}'" class='add-blog text-right'>Add Post</button>
+    </div>
+    {% endif %}
+    <div class="m-title text-center">
+      <h2>COMMUNITY BLOGS</h2>
+    </div>
+    <div class="row event">
+
+      {% for post in blog_posts %}
+        <div class="col-md-4 blog-post-card">
+          <h3 class="mt">{{ post.title }}</h3>
+          <p style='font-size: 16px'>
+          {{ post.intro }}
+          </p>
+          <button class='blog_button text-center' onclick="location.href='{% url 'blog_post' post.post_slug %}'">Read More</button>
+        </div>
+      {% endfor %}
+
+    </div>
+  </div>
+</section>
+{% endblock content %}
+

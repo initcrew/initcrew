@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<section class="events">
+  <div class="container border-b">
+    <div class="m-title text-center">
+      {% if messages %}
+        {% for message in messages %}
+        {% if message.tags == 'success' %}
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+          <span style="font-family: 'Poppins', sans-serif;">{{ message }}</span>
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        {% else %}
+        <div class="alert alert-error alert-dismissible fade show" role="alert">
+          <span style="font-family: 'Poppins', sans-serif;">{{ message }}</span>
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        {% endif %}
+        {% endfor %}
+      {% endif %}
+      <h2>ADD POST</h2>
+    </div>
+    <form action="{% url 'add_blog' %}" method='POST'>
+      {% csrf_token %}
+      <div class='form-row'>
+        <div class="form-group col">
+          <label for="title">Post title</label>
+          <input type="text" name='title' class="form-control" id="title" aria-describedby="Post title" placeholder="Enter post title" required>
+        </div>
+        <div class="form-group col">
+          <label for="author">Author</label>
+          <input type="text" name='author' class="form-control" id="author" aria-describedby="Author name" placeholder="Enter author name" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="intro">Introduction paragraph</label>
+        <textarea class="form-control" name='intro' id="intro" rows="5" placeholder="Enter introduction paragraph" required></textarea>
+        <small class="form-text text-muted">This will the content displayed on the blog card.</small>
+      </div>
+      <div class="form-group">
+        <label for="body">Post content</label>
+        <textarea class="form-control" name='body' id="body" rows="10" placeholder="Enter post content" required></textarea>
+        <small class="form-text text-muted">Write your content in Markdown or HTML.</small>
+      </div>
+      <div class='text-center mb-5'>
+        <button type="submit" class="add-blog mb-5">Submit</button>
+      </div>
+    </form>
+  </div>
+</section>
+{% endblock content %}

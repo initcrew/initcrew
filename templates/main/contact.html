@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<section class="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-lg-12">
+        <ul class="d-flex social-icon style-none text-center">
+          <li>
+            <a href="https://discord.gg/fDaVASXr" target="_blank" rel="noopener noreferrer"><img src="{% static 'images/discord.png' %}" /></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/channel/UCy7bf0DIM8Oy7vVnVPENZxA" target="_blank" rel="noopener noreferrer"><img src="{% static 'images/youtube.png' %}" /></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/initcrew_community/" target="_blank" rel="noopener noreferrer"><img src="{% static 'images/instagram.png' %}" /></a>
+          </li>
+          <li>
+            <a href="mailto:info@initcrew.com" target="_blank" rel="noopener noreferrer"><img src="{% static 'images/email.png' %}" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock content %}

@@ -1,0 +1,24 @@
+{% extends 'base.html' %} 
+{% load static %} 
+{% load blog_markdown %} 
+{% block content %}
+<section class="our_team">
+  {% if post %}
+  <div class="container border-b" id="blog_post">
+    <div class="m-title">
+      <h2 class="text-center">{{ post.title }}</h2>
+      <p class="text-center">Written By <span class="author">{{ post.author }}</span> on {{ post.created_at | date:"d M Y" }}</p>
+    </div>
+
+    <br />
+    <div class="blog_content">{{ post.body | to_markdown | safe }}</div>
+  </div>
+  {% else %}
+  <div class="container border-b" id="blog_post">
+    <div class="m-title">
+      <h2 class="text-center">The post you are looking for is not available</h2>
+    </div>
+  </div>
+  {% endif %}
+</section>
+{% endblock content %}

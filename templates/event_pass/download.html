@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<section class="events">
+  <div class="container border-b">
+    <div class="m-title text-center">
+      {% if messages %}
+        {% for message in messages %}
+        {% if message.tags == 'success' %}
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+          <span style="font-family: 'Poppins', sans-serif;">{{ message }}</span>
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        {% else %}
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+          <span style="font-family: 'Poppins', sans-serif;">{{ message }}</span>
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        {% endif %}
+        {% endfor %}
+      {% endif %}
+      <h2>DOWNLOAD EVENT PASS</h2>
+    </div>
+    <form action="{% url 'download' %}" method='POST'>
+      {% csrf_token %}
+      <div class='form-row'>
+        <div class="form-group col">
+          <label for="title">Email address</label>
+          <input type="email" name='email' class="form-control" id="title" placeholder="Enter email address" required>
+        </div>
+      </div>
+      <div class='text-center mb-5'>
+        <button type="submit" class="add-blog mb-5">Download</button>
+      </div>
+    </form>
+  </div>
+</section>
+{% endblock content %}
