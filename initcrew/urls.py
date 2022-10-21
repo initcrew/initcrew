@@ -19,7 +19,7 @@ from django.conf.urls.static import static
 from django.conf import settings
 
 urlpatterns = [
-    path('icpanel/', admin.site.urls),
+    path('controller/', admin.site.urls),
     path('', include('main.urls')),
     path('blog/', include('blog.urls')),
     path('event/', include('event_pass.urls'))
