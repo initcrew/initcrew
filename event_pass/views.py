@@ -19,6 +19,9 @@ def download(request):
       if meetup_pass.count > 5:
         messages.error(request, 'You have exceeded your download limit.')
         return render(request, 'event_pass/download.html')
+      elif not meetup_pass.is_coming:
+        messages.error(request, 'You have cancelled your registration.')
+        return render(request, 'event_pass/download.html')
       else:
         image = meetup_pass.pass_image.path
         meetup_pass.count += 1
