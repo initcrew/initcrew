@@ -14,11 +14,9 @@ def home(request):
 
 def team(request):
   founders = Team.objects.filter(is_admin=True)
-  core_members = Team.objects.filter(is_admin=False)
 
   context = {
     'founders': founders,
-    'core_members': core_members
   }
   return render(request, 'main/our_team.html', context)
 
