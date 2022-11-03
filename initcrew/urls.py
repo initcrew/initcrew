@@ -22,5 +22,5 @@ urlpatterns = [
     path('controller/', admin.site.urls),
     path('', include('main.urls')),
     path('blog/', include('blog.urls')),
-    path('event/', include('event_pass.urls'))
+    path('meetup/', include('meetup.urls'))
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

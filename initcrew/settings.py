@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['initcrew.com', 'www.initcrew.com', '143.198.230.63', '127.0.0.1']
 
@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'main',
     'blog',
-    'event_pass',
+    'meetup',
 ]
 
 MIDDLEWARE = [

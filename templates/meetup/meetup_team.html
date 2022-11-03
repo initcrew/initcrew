@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <!-- Core Team Section -->
+    <section class="our_team" id="our_team">
+      <div class="container border-b">
+        <div class="m-title text-center">
+          <h2>MEETUP CORE TEAM</h2>
+        </div>
+        <div class="row event">
+          {% for core_member in team %}
+            <div class="col-md-6 col-lg-4 team">
+              <div class="border-t">
+                <div class="title-t text-center">
+                  <h3>{{ core_member.name }}</h3>
+                  <p>{{ core_member.position }}</p>
+                  <p>
+                    <a href="mailto:{{ core_member.email }}" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-envelope mx-2 h4"></i></a>
+                    <a href="{{ core_member.linkedin }}" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin mx-2 h4"></i></a>
+                    <a href="{{ core_member.twitter }}" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter mx-2 h4"></i></a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+{% endblock content %}
