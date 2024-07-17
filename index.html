@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/styles/app.css" />
   </head>
   <body class="font-poppins bg-gray-900 text-gray-200">
@@ -165,7 +166,7 @@
       <div id="blog" class="my-28">
         <h2 class="text-center text-4xl font-bold tracking-wider uppercase mb-4">Blog</h2>
         <hr class="w-12 mx-auto mb-20 border-gray-200" />
-        <div class="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div class="grid gap-8 sm:grid-cols-1 md:grid-cols-2 md:grid-cols-3">
           <div class="bg-gray-800 p-4 rounded-lg shadow-lg space-y-4">
             <img src="assets/images/blog.jpg" alt="blog image" class="rounded-lg w-full" />
             <h3 class="text-xl font-semibold">Android CTF Juicy Bar :: Meet Frida</h3>
@@ -230,6 +231,201 @@
           </div>
         </div>
       </div>
+      <div id="events" class="my-28">
+        <h2 class="text-center text-4xl font-bold tracking-wider uppercase mb-4">Events</h2>
+        <hr class="w-12 mx-auto mb-20 border-gray-200" />
+
+        <div class="relative">
+          <!-- <button
+            onclick="prevSlide()"
+            class="hidden md:block absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full z-10 ml-4">
+            ‹
+          </button> -->
+          <div class="carousel flex space-x-4 px-4">
+            <div
+              class="carousel-item relative w-full md:w-1/4 flex-shrink-0 bg-gray-800 rounded-lg shadow-md">
+              <!-- <div
+                class="absolute top-2 right-2 bg-red-600 text-gray-200 rounded-full px-4 py-1 text-xs font-medium">
+                Upcoming
+              </div> -->
+              <img
+                src="assets/images/blog.jpg"
+                alt="Event 1"
+                class="w-full h-40 md:h-60 object-cover rounded-t-lg" />
+              <div class="p-4">
+                <h3 class="text-xl font-semibold mb-2">Breakin CTF</h3>
+                <p class="text-gray-400">
+                  Conducted during the COVID-19 pandemic, Breakin CTF Challenge attracted over 650
+                  participants. The event was proudly sponsored by industry leaders HackerOne,
+                  BugCrowd, and HackersEra.
+                </p>
+              </div>
+            </div>
+            <div
+              class="carousel-item relative w-full md:w-1/4 flex-shrink-0 bg-gray-800 rounded-lg shadow-md">
+              <!-- <div
+                class="absolute top-2 right-2 bg-red-600 text-gray-200 rounded-full px-4 py-1 text-xs font-medium">
+                Upcoming
+              </div> -->
+              <img
+                src="assets/images/blog.jpg"
+                alt="Event 2"
+                class="w-full h-40 md:h-60 object-cover rounded-t-lg" />
+              <div class="p-4">
+                <h3 class="text-xl font-semibold mb-2">DISHA Webinar Series</h3>
+                <p class="text-gray-400">
+                  These virtual cybersecurity workshops and training sessions come in three
+                  variants, DISHA Mark I, DISHA Mark II, DISHA Mark III, offering comprehensive and
+                  advanced learning opportunities.
+                </p>
+              </div>
+            </div>
+            <div
+              class="carousel-item relative w-full md:w-1/4 flex-shrink-0 bg-gray-800 rounded-lg shadow-md">
+              <!-- <div
+                class="absolute top-2 right-2 bg-red-600 text-gray-200 rounded-full px-4 py-1 text-xs font-medium">
+                Upcoming
+              </div> -->
+              <img
+                src="assets/images/blog.jpg"
+                alt="Event 3"
+                class="w-full h-40 md:h-60 object-cover rounded-t-lg" />
+              <div class="p-4">
+                <h3 class="text-xl font-semibold mb-2">Initcrew Meetup</h3>
+                <p class="text-gray-400">
+                  Held in October 2022, the Initcrew Meetup was sponsored by Lyminal and E-Hachify,
+                  drawing around 100 participants for an engaging and insightful event.
+                </p>
+              </div>
+            </div>
+            <div
+              class="carousel-item relative w-full md:w-1/4 flex-shrink-0 bg-gray-800 rounded-lg shadow-md">
+              <!-- <div
+                class="absolute top-2 right-2 bg-red-600 text-gray-200 rounded-full px-4 py-1 text-xs font-medium">
+                Upcoming
+              </div> -->
+              <img
+                src="assets/images/blog.jpg"
+                alt="Event 4"
+                class="w-full h-40 md:h-60 object-cover rounded-t-lg" />
+              <div class="p-4">
+                <h3 class="text-xl font-semibold mb-2">Boot 2 Cloud CTF</h3>
+                <p class="text-gray-400">
+                  Our first onsite CTF event, Boot 2 Cloud Onsite CTF, was part of a larger meetup
+                  and saw participation from around 40 cybersecurity enthusiasts.
+                </p>
+              </div>
+            </div>
+            <div
+              class="carousel-item relative w-full md:w-1/4 flex-shrink-0 bg-gray-800 rounded-lg shadow-md">
+              <!-- <div
+                class="absolute top-2 right-2 bg-red-600 text-gray-200 rounded-full px-4 py-1 text-xs font-medium">
+                Upcoming
+              </div> -->
+              <img
+                src="assets/images/blog.jpg"
+                alt="Event 5"
+                class="w-full h-40 md:h-60 object-cover rounded-t-lg" />
+              <div class="p-4">
+                <h3 class="text-xl font-semibold mb-2">Onsite Training Sessions</h3>
+                <p class="text-gray-400">
+                  We have conducted over seven offline training sessions across various colleges in
+                  Kerala, delivering hands-on cybersecurity education to students and professionals.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- <button
+            onclick="nextSlide()"
+            class="hidden md:block absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full z-10 mr-4">
+            ›
+          </button> -->
+        </div>
+      </div>
+      <div id="gallery" class="my-28 overflow-hidden">
+        <h2 class="text-center text-4xl font-bold tracking-wider uppercase mb-4">EVENT GALLERY</h2>
+        <hr class="w-12 mx-auto mb-20 border-gray-200" />
+
+        <div class="relative px-4 md:px-0">
+          <div class="swiper-container gallery-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="assets/images/initcrew_gallery/1.JPG"
+                  alt="Gallery Image 1"
+                  class="w-full h-64 object-cover rounded-lg" />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/images/initcrew_gallery/2.JPG"
+                  alt="Gallery Image 2"
+                  class="w-full h-64 object-cover rounded-lg" />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/images/initcrew_gallery/3.JPG"
+                  alt="Gallery Image 3"
+                  class="w-full h-64 object-cover rounded-lg" />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/images/initcrew_gallery/4.JPG"
+                  alt="Gallery Image 4"
+                  class="w-full h-64 object-cover rounded-lg" />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/images/initcrew_gallery/5.JPG"
+                  alt="Gallery Image 5"
+                  class="w-full h-64 object-cover rounded-lg" />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/images/initcrew_gallery/6.JPG"
+                  alt="Gallery Image 6"
+                  class="w-full h-64 object-cover rounded-lg" />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/images/initcrew_gallery/7.JPG"
+                  alt="Gallery Image 7"
+                  class="w-full h-64 object-cover rounded-lg" />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/images/initcrew_gallery/8.jpg"
+                  alt="Gallery Image 8"
+                  class="w-full h-64 object-cover rounded-lg" />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/images/initcrew_gallery/10.jpeg"
+                  alt="Gallery Image 9"
+                  class="w-full h-64 object-cover rounded-lg" />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/images/initcrew_gallery/11.JPG"
+                  alt="Gallery Image 9"
+                  class="w-full h-64 object-cover rounded-lg" />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/images/initcrew_gallery/12.JPG"
+                  alt="Gallery Image 9"
+                  class="w-full h-64 object-cover rounded-lg" />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/images/initcrew_gallery/9.jpeg"
+                  alt="Gallery Image 9"
+                  class="w-full h-64 object-cover rounded-lg" />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
     </main>
     <footer class="bg-gray-800 py-12 text-gray-200 text-center">
       <div class="container mx-auto">
@@ -250,6 +446,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
       document.getElementById('menu-button').addEventListener('click', function () {
         var mobileMenu = document.getElementById('mobile-menu');
@@ -258,6 +455,27 @@
         } else {
           mobileMenu.classList.add('hidden');
         }
+      });
+
+      document.addEventListener('DOMContentLoaded', function () {
+        const gallerySwiper = new Swiper('.gallery-swiper', {
+          slidesPerView: 'auto',
+          spaceBetween: 10,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          breakpoints: {
+            641: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
+          },
+        });
       });
     </script>
   </body>

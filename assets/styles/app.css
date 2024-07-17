@@ -21,13 +21,13 @@ a:hover {
   color: #ff6b6b;
 }
 
-img {
+/* img {
   transition: transform 0.3s;
 }
 
 img:hover {
   transform: scale(1.05);
-}
+} */
 
 .custom-mt-10 {
   margin-top: 10rem;
@@ -35,4 +35,54 @@ img:hover {
 
 .custom-mt-15 {
   margin-top: 15rem;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel-item {
+  scroll-snap-align: center;
+}
+
+.gallery-swiper {
+  overflow: visible;
+}
+
+.gallery-swiper .swiper-slide {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 640px) {
+  .gallery-swiper .swiper-slide {
+    padding-right: 0;
+  }
+}
+
+@media (min-width: 641px) {
+  .gallery-swiper .swiper-slide {
+    padding-right: 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .gallery-swiper .swiper-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  .gallery-swiper .swiper-slide {
+    width: 100% !important;
+    margin-right: 0 !important;
+    padding-right: 0;
+  }
+  .gallery-swiper .swiper-pagination {
+    display: none;
+  }
 }
