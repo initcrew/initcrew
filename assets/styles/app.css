@@ -1,0 +1,38 @@
+/* Hide scrollbar for Chrome, Safari, and Opera */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge, and Firefox */
+* {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #ff6b6b;
+}
+
+img {
+  transition: transform 0.3s;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+.custom-mt-10 {
+  margin-top: 10rem;
+}
+
+.custom-mt-15 {
+  margin-top: 15rem;
+}

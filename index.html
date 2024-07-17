@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon/initcrew-light.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>initcrew</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/styles/app.css" />
+  </head>
+  <body class="font-poppins bg-gray-900 text-gray-200">
+    <header class="py-4 border-b border-gray-200 px-4 md:px-0">
+      <div class="container mx-auto flex justify-between items-center">
+        <img class="w-32 md:w-36" src="assets/images/logo/initcrew-light.png" alt="initcrew logo" />
+        <div class="hidden md:flex items-center space-x-10">
+          <a href="#home" class="text-gray-200 font-semibold">Home</a>
+          <a href="#projects" class="text-gray-200 font-semibold">Projects</a>
+          <a href="#blog" class="text-gray-200 font-semibold">Blog</a>
+          <a href="#events" class="text-gray-200 font-semibold">Events</a>
+          <a href="#about" class="text-gray-200 font-semibold">About</a>
+        </div>
+        <button class="md:hidden text-gray-200 focus:outline-none" id="menu-button">
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="md:hidden hidden" id="mobile-menu">
+        <a href="#home" class="block py-2 px-4 text-gray-200 font-semibold">Home</a>
+        <a href="#projects" class="block py-2 px-4 text-gray-200 font-semibold">Projects</a>
+        <a href="#blog" class="block py-2 px-4 text-gray-200 font-semibold">Blog</a>
+        <a href="#events" class="block py-2 px-4 text-gray-200 font-semibold">Events</a>
+        <a href="#about" class="block py-2 px-4 text-gray-200 font-semibold">About</a>
+      </div>
+    </header>
+    <main class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row justify-between items-center my-20">
+        <div class="text-gray-200 pb-20 md:pb-0 md:pr-10 text-left">
+          <h1 class="font-bold text-3xl md:text-5xl tracking-wide">Join the Shield</h1>
+          <p class="text-md md:text-2xl tracking-wide my-4">
+            Where cybersecurity meets community,<br />
+            Empowering students and professionals alike!
+          </p>
+          <button
+            class="px-6 py-3 mt-2 bg-red-600 text-gray-200 font-semibold rounded-lg transition transform hover:bg-red-700 active:scale-90">
+            ABOUT US
+          </button>
+        </div>
+        <div class="mt-2 md:block md:mt-20">
+          <img class="h-60 md:h-96" src="assets/images/server-dark.png" alt="" />
+        </div>
+      </div>
+      <div class="flex justify-center mb-16 md:mt-[14rem]">
+        <div class="w-12 animate-bounce">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0h24v24H0z" fill="none"></path>
+            <path
+              d="M11.9997 13.1716L7.04996 8.22186L5.63574 9.63607L11.9997 16L18.3637 9.63607L16.9495 8.22186L11.9997 13.1716Z"
+              fill="currentColor"></path>
+          </svg>
+        </div>
+      </div>
+      <div id="projects" class="my-28">
+        <h2 class="text-center text-4xl font-bold tracking-wider uppercase mb-4">Projects</h2>
+        <hr class="w-12 mx-auto mb-20 border-gray-200" />
+        <div class="space-y-8">
+          <div class="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-8">
+            <img
+              class="w-full md:w-96 border border-gray-700 rounded-lg"
+              src="assets/images/reconizer.jpg"
+              alt="Reconizer" />
+            <div class="space-y-4">
+              <div class="flex items-center space-x-4">
+                <h3 class="text-2xl font-semibold">RECONIZER V2</h3>
+                <div class="bg-red-600 text-gray-200 rounded-full px-4 py-1 text-xs font-medium">
+                  Upcoming
+                </div>
+              </div>
+              <p>
+                Reconizer V2 is a significant upgrade from its previous version. It now has the
+                ability to support custom workflows created by the user or community. These
+                workflows can connect the latest and greatest tools in any desired way.
+                Additionally, we will provide common workflows that are used during the bug bounty
+                recon phase, written in YAML format. To guide users, we will publish example
+                recipes. Users can easily pipe one program's output into another program's input,
+                and we offer drag and drop support for workflow creation. This eliminates the need
+                to constantly update and find alternative tools when hard-coded tools go out of
+                support.
+              </p>
+              <a href="#projects" class="pointer-events-none text-gray-500 cursor-not-allowed"
+                >Learn More</a
+              >
+            </div>
+          </div>
+          <div class="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-8">
+            <img
+              class="w-full md:w-96 border border-gray-700 rounded-lg"
+              src="assets/images/frida-labs.png"
+              alt="Frida labs" />
+            <div class="space-y-4">
+              <h3 class="text-2xl font-semibold">Frida Labs</h3>
+              <p>
+                This repository offers a series of beginner-friendly challenges to help you learn
+                Frida for Android, covering everything from basic to intermediate levels. These
+                challenges, though not hardcore Capture The Flag (CTF) applications, focus on
+                familiarizing you with Frida's commonly used APIs. The primary goal is to build your
+                understanding and ability to use Frida and comprehend scripts written by others.
+                While each challenge includes flags, the emphasis is on exploring various methods to
+                obtain them using Frida. The repository will be updated with new challenges over
+                time. APKs and their solutions are provided in the respective directories, with the
+                first solution guiding those entirely new to Frida.
+              </p>
+              <a
+                href="https://github.com/DERE-ad2001/Frida-Labs"
+                target="_blank"
+                class="text-blue-500"
+                >Learn More</a
+              >
+            </div>
+          </div>
+          <div class="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-8">
+            <img
+              class="w-full md:w-96 border border-gray-700 rounded-lg"
+              src="assets/images/reconizer.jpg"
+              alt="Reconizer" />
+            <div class="space-y-4">
+              <div class="flex items-center space-x-4">
+                <h3 class="text-2xl font-semibold">R3C0Nizer</h3>
+                <div class="bg-gray-600 text-gray-200 rounded-full px-4 py-1 text-xs font-medium">
+                  Deprecated
+                </div>
+              </div>
+              <p>
+                R3C0Nizer is a B-Tier recon framework that operates through a command-line interface
+                and a menu-driven system. It automates the web application reconnaissance process
+                and installs all necessary tools and dependencies while running each module. This
+                means that the user does not need to install any tools manually. R3C0Nizer is
+                designed to gather assets and information that can help the user move on to the next
+                step and provides the latest, fastest, and most efficient tools available. The
+                framework's user-friendly design ensures both beginners and experienced users can
+                benefit from its capabilities.
+              </p>
+              <a
+                href="https://github.com/Anon-Artist/R3C0Nizer"
+                target="_blank"
+                class="text-blue-500"
+                >Learn More</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="blog" class="my-28">
+        <h2 class="text-center text-4xl font-bold tracking-wider uppercase mb-4">Blog</h2>
+        <hr class="w-12 mx-auto mb-20 border-gray-200" />
+        <div class="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <div class="bg-gray-800 p-4 rounded-lg shadow-lg space-y-4">
+            <img src="assets/images/blog.jpg" alt="blog image" class="rounded-lg w-full" />
+            <h3 class="text-xl font-semibold">Android CTF Juicy Bar :: Meet Frida</h3>
+            <p>
+              Let's continue with our walkthrough of Juicy Bar. If you're new here, try checking out
+              other blogs and take the challenge before reading this at
+              <a
+                href="https://juicy.barsk.xyz"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-blue-500"
+                >Juicy Bar</a
+              >. This level includes chalhttp://lenges solvable with Frida. If you're new to Frida,
+              check out my repository for guidance and give this challenge a try. We need to uncover
+              three flags to complete it.
+            </p>
+            <a
+              href="https://ad2001.com/blog/frida"
+              target="_blank"
+              class="block px-4 py-2 bg-red-600 text-gray-200 hover:text-gray-200 text-center font-semibold rounded-lg transition transform hover:bg-red-700 active:scale-90">
+              Read more
+            </a>
+          </div>
+          <div class="bg-gray-800 p-4 rounded-lg shadow-lg space-y-4">
+            <img src="assets/images/blog.jpg" alt="blog image" class="rounded-lg w-full" />
+            <h3 class="text-xl font-semibold">Android CTF Juicy Bar :: Reverse Engineering</h3>
+            <p>
+              Let's continue with our walkthrough of Juicy Bar. If you're new here, I recommend
+              exploring some of the other blogs and taking on the challenges they offer before
+              diving into this one. You can find more information about
+              <a
+                href="https://juicy.barsk.xyz/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-blue-500"
+                >Juicy Bar</a
+              >
+              here. Our goal is to uncover four flags scattered throughout the tasks presented.
+            </p>
+            <a
+              href="https://ad2001.com/blog/frida"
+              target="_blank"
+              class="block px-4 py-2 bg-red-600 text-gray-200 hover:text-gray-200 text-center font-semibold rounded-lg transition transform hover:bg-red-700 active:scale-90">
+              Read more
+            </a>
+          </div>
+          <div class="bg-gray-800 p-4 rounded-lg shadow-lg space-y-4">
+            <img src="assets/images/blog.jpg" alt="blog image" class="rounded-lg w-full" />
+            <h3 class="text-xl font-semibold">Android Security :: Exported Broadcast Receiver</h3>
+            <p>
+              It's been a while since I delved into Android security, but I recently wanted to
+              quickly cover exported broadcast receivers. Broadcast receivers are like messages sent
+              to a group of people. If you've used messaging apps, you get the idea. It's like
+              shouting out a message at a party for everyone to hear.
+            </p>
+            <a
+              href="https://ad2001.com/blog/android-exported-broadcast-receiver"
+              target="_blank"
+              class="block px-4 py-2 bg-red-600 text-gray-200 hover:text-gray-200 text-center font-semibold rounded-lg transition transform hover:bg-red-700 active:scale-90">
+              Read more
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-gray-800 py-12 text-gray-200 text-center">
+      <div class="container mx-auto">
+        <img
+          class="w-36 mx-auto mb-4"
+          src="assets/images/logo/initcrew-light.png"
+          alt="initcrew logo" />
+        <p class="mb-4">&copy; 2024 initcrew. All rights reserved.</p>
+        <div class="space-x-4">
+          <a href="https://x.com/in1tcr3w" target="_blank" class="text-gray-200">Twitter (X)</a>
+          <a
+            href="https://www.linkedin.com/company/initcrew-community"
+            target="_blank"
+            class="text-gray-200"
+            >LinkedIn</a
+          >
+          <a href="https://github.com/initcrew" target="_blank" class="text-gray-200">GitHub</a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document.getElementById('menu-button').addEventListener('click', function () {
+        var mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenu.classList.contains('hidden')) {
+          mobileMenu.classList.remove('hidden');
+        } else {
+          mobileMenu.classList.add('hidden');
+        }
+      });
+    </script>
+  </body>
+</html>
