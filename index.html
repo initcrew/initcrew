@@ -330,7 +330,7 @@
           </div>
         </div>
       </div>
-      <div id="events" class="my-28">
+      <div id="events" class="my-28 container mx-auto px-4">
         <h2
           class="text-center text-4xl font-bold tracking-wider uppercase mb-4"
         >
@@ -338,133 +338,113 @@
         </h2>
         <hr class="w-12 mx-auto mb-20 border-gray-200" />
 
-        <div class="relative">
-          <!-- <button
-            onclick="prevSlide()"
-            class="hidden md:block absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full z-10 ml-4">
-            ‹
-          </button> -->
-          <div class="carousel flex space-x-4 px-4">
-            <div
-              class="carousel-item relative w-full md:w-1/4 flex-shrink-0 bg-gray-800 rounded-lg shadow-md"
-            >
-              <!-- <div
-                class="absolute top-2 right-2 bg-red-600 text-gray-200 rounded-full px-4 py-1 text-xs font-medium">
-                Upcoming
-              </div> -->
-              <img
-                src="assets/images/events/break-in.webp"
-                alt="Event 1"
-                class="w-full h-40 md:h-60 object-cover rounded-t-lg"
-                loading="lazy"
-              />
-              <div class="p-4">
-                <h3 class="text-xl font-semibold mb-2">Breakin CTF</h3>
-                <p class="text-gray-400">
-                  Conducted during the COVID-19 pandemic, Breakin CTF Challenge
-                  attracted over 650 participants. The event was proudly
-                  sponsored by industry leaders HackerOne, BugCrowd, and
-                  HackersEra.
-                </p>
+        <!-- Swiper container -->
+        <div class="swiper eventsSwiper">
+          <div class="swiper-wrapper">
+            <!-- Swiper slides -->
+            <div class="swiper-slide">
+              <div class="bg-gray-800 rounded-lg shadow-md">
+                <img
+                  src="assets/images/events/break-in.webp"
+                  alt="Event 1"
+                  class="w-full h-40 md:h-60 object-cover rounded-t-lg"
+                  loading="lazy"
+                />
+                <div class="p-4">
+                  <h3 class="text-xl font-semibold mb-2">Breakin CTF</h3>
+                  <p class="text-gray-400">
+                    Conducted during the COVID-19 pandemic, Breakin CTF
+                    Challenge attracted over 650 participants. The event was
+                    proudly sponsored by industry leaders HackerOne, BugCrowd,
+                    and HackersEra.
+                  </p>
+                </div>
               </div>
             </div>
-            <div
-              class="carousel-item relative w-full md:w-1/4 flex-shrink-0 bg-gray-800 rounded-lg shadow-md"
-            >
-              <!-- <div
-                class="absolute top-2 right-2 bg-red-600 text-gray-200 rounded-full px-4 py-1 text-xs font-medium">
-                Upcoming
-              </div> -->
-              <img
-                src="assets/images/events/disha.webp"
-                alt="Event 2"
-                class="w-full h-40 md:h-60 object-cover rounded-t-lg"
-                loading="lazy"
-              />
-              <div class="p-4">
-                <h3 class="text-xl font-semibold mb-2">DISHA Webinar Series</h3>
-                <p class="text-gray-400">
-                  These virtual cybersecurity workshops and training sessions
-                  come in three variants, DISHA Mark I, DISHA Mark II, DISHA
-                  Mark III, offering comprehensive and advanced learning
-                  opportunities.
-                </p>
+
+            <div class="swiper-slide">
+              <div class="bg-gray-800 rounded-lg shadow-md">
+                <img
+                  src="assets/images/events/disha.webp"
+                  alt="Event 2"
+                  class="w-full h-40 md:h-60 object-cover rounded-t-lg"
+                  loading="lazy"
+                />
+                <div class="p-4">
+                  <h3 class="text-xl font-semibold mb-2">
+                    DISHA Webinar Series
+                  </h3>
+                  <p class="text-gray-400">
+                    These virtual cybersecurity workshops and training sessions
+                    come in three variants, DISHA Mark I, DISHA Mark II, DISHA
+                    Mark III, offering comprehensive and advanced learning
+                    opportunities.
+                  </p>
+                </div>
               </div>
             </div>
-            <div
-              class="carousel-item relative w-full md:w-1/4 flex-shrink-0 bg-gray-800 rounded-lg shadow-md"
-            >
-              <!-- <div
-                class="absolute top-2 right-2 bg-red-600 text-gray-200 rounded-full px-4 py-1 text-xs font-medium">
-                Upcoming
-              </div> -->
-              <img
-                src="assets/images/events/meetup.webp"
-                alt="Event 3"
-                class="w-full h-40 md:h-60 object-cover rounded-t-lg"
-                loading="lazy"
-              />
-              <div class="p-4">
-                <h3 class="text-xl font-semibold mb-2">Initcrew Meetup</h3>
-                <p class="text-gray-400">
-                  Held in October 2022, the Initcrew Meetup was sponsored by
-                  Lyminal and E-Hachify, drawing around 100 participants for an
-                  engaging and insightful event.
-                </p>
+
+            <div class="swiper-slide">
+              <div class="bg-gray-800 rounded-lg shadow-md">
+                <img
+                  src="assets/images/events/meetup.webp"
+                  alt="Event 3"
+                  class="w-full h-40 md:h-60 object-cover rounded-t-lg"
+                  loading="lazy"
+                />
+                <div class="p-4">
+                  <h3 class="text-xl font-semibold mb-2">Initcrew Meetup</h3>
+                  <p class="text-gray-400">
+                    Held in October 2022, the Initcrew Meetup was sponsored by
+                    Lyminal and E-Hachify, drawing around 100 participants for
+                    an engaging and insightful event.
+                  </p>
+                </div>
               </div>
             </div>
-            <div
-              class="carousel-item relative w-full md:w-1/4 flex-shrink-0 bg-gray-800 rounded-lg shadow-md"
-            >
-              <!-- <div
-                class="absolute top-2 right-2 bg-red-600 text-gray-200 rounded-full px-4 py-1 text-xs font-medium">
-                Upcoming
-              </div> -->
-              <img
-                src="assets/images/events/live-ctf.webp"
-                alt="Event 4"
-                class="w-full h-40 md:h-60 object-cover rounded-t-lg"
-                loading="lazy"
-              />
-              <div class="p-4">
-                <h3 class="text-xl font-semibold mb-2">Boot 2 Cloud CTF</h3>
-                <p class="text-gray-400">
-                  Our first onsite CTF event, Boot 2 Cloud Onsite CTF, was part
-                  of a larger meetup and saw participation from around 40
-                  cybersecurity enthusiasts.
-                </p>
+
+            <div class="swiper-slide">
+              <div class="bg-gray-800 rounded-lg shadow-md">
+                <img
+                  src="assets/images/events/live-ctf.webp"
+                  alt="Event 4"
+                  class="w-full h-40 md:h-60 object-cover rounded-t-lg"
+                  loading="lazy"
+                />
+                <div class="p-4">
+                  <h3 class="text-xl font-semibold mb-2">Boot 2 Cloud CTF</h3>
+                  <p class="text-gray-400">
+                    Our first onsite CTF event, Boot 2 Cloud Onsite CTF, was
+                    part of a larger meetup and saw participation from around 40
+                    cybersecurity enthusiasts.
+                  </p>
+                </div>
               </div>
             </div>
-            <div
-              class="carousel-item relative w-full md:w-1/4 flex-shrink-0 bg-gray-800 rounded-lg shadow-md"
-            >
-              <!-- <div
-                class="absolute top-2 right-2 bg-red-600 text-gray-200 rounded-full px-4 py-1 text-xs font-medium">
-                Upcoming
-              </div> -->
-              <img
-                src="assets/images/events/training.webp"
-                alt="Event 5"
-                class="w-full h-40 md:h-60 object-cover rounded-t-lg"
-                loading="lazy"
-              />
-              <div class="p-4">
-                <h3 class="text-xl font-semibold mb-2">
-                  Onsite Training Sessions
-                </h3>
-                <p class="text-gray-400">
-                  We have conducted over seven offline training sessions across
-                  various colleges in Kerala, delivering hands-on cybersecurity
-                  education to students and professionals.
-                </p>
+
+            <div class="swiper-slide">
+              <div class="bg-gray-800 rounded-lg shadow-md">
+                <img
+                  src="assets/images/events/training.webp"
+                  alt="Event 5"
+                  class="w-full h-40 md:h-60 object-cover rounded-t-lg"
+                  loading="lazy"
+                />
+                <div class="p-4">
+                  <h3 class="text-xl font-semibold mb-2">
+                    Onsite Training Sessions
+                  </h3>
+                  <p class="text-gray-400">
+                    We have conducted over seven offline training sessions
+                    across various colleges in Kerala, delivering hands-on
+                    cybersecurity education to students and professionals.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-          <!-- <button
-            onclick="nextSlide()"
-            class="hidden md:block absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full z-10 mr-4">
-            ›
-          </button> -->
+          <!-- Swipe indicator -->
+          <div class="swipe-indicator"></div>
         </div>
       </div>
       <div id="gallery" class="my-28 overflow-hidden">
@@ -659,6 +639,23 @@
             el: ".swiper-pagination",
             clickable: true,
           },
+          breakpoints: {
+            641: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
+          },
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        new Swiper(".eventsSwiper", {
+          slidesPerView: 1,
+          spaceBetween: 16,
           breakpoints: {
             641: {
               slidesPerView: 2,

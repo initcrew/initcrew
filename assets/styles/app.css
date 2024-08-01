@@ -10,7 +10,7 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 a {
@@ -85,4 +85,25 @@ img:hover {
   .gallery-swiper .swiper-pagination {
     display: none;
   }
+}
+
+.swiper-slide {
+  width: 85%;
+}
+.swipe-indicator {
+  width: 30px;
+  height: 30px;
+  margin: 20px auto 0;
+  position: relative;
+}
+.swipe-indicator::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid rgba(255, 255, 255, 0.7);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+  transform: translate(-75%, -50%) rotate(-45deg);
 }
